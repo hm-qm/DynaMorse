@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>JS Morse Translator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Morse Code Translator</h1>
+        <span>By Hesham Qasem</span>
+    </header>
+    <main>
+        <div class="morse">
+            <div class="morse__main">
+                <div class="morse__input-area">
+                    <div class="morse__input-text">
+                        <label class="morse__input-text--label" for="inputField">Input</label>
+                        <textarea data-input-field class="morse__input-text--area" name="inputField" id="inputField"
+                            cols="30" rows="10" placeholder="Start typing English or Morse.."></textarea>
+                    </div>
+                    <div class="morse__input-reset">
+                        <button data-input-reset class="morse__input-reset--btn">Reset</button>
+                    </div>
+                </div>
+                <div class="morse__output-area">
+                    <div class="morse__output-text">
+                        <label class="morse__output-text--label" for="outField">Output</label>
+                        <textarea data-output-field class="morse__output-text--area" name="outputField" id="outputField"
+                            cols="30" rows="10" disabled>... --- -- . / - . -..- -</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./JS/morseDictionary.js"></script>
+    <script type="module" src="./JS/translator.js"></script>
+    <script type="module" src="./JS/DOM.js"></script>
+</body>
+
+</html>

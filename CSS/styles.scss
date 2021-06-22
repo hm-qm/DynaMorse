@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+	width: auto;
+}
+
+.morse {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	&__main {
+		height: 50%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__input {
+		&-area {
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__output {
+		&-area {
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
