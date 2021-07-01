@@ -2,19 +2,25 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto Mono", monospace;
+	color: white;
 }
 
 html,
 body {
 	width: auto;
+	background-color: #0f4c5c;
+}
+
+header {
+	padding: 5px 0 0 10px;
 }
 
 .morse {
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 
 	&__main {
@@ -36,6 +42,41 @@ body {
 		&-text {
 			display: flex;
 			flex-direction: column;
+
+			&--field {
+				width: 100%;
+				padding: 10px;
+				background: #00000065;
+				color: white;
+				outline: none;
+				border: none;
+			}
+		}
+
+		&-reset {
+			width: 100%;
+
+			&--btn {
+				margin-top: 20px;
+				font-size: 2rem;
+				padding: 5px 10px;
+				text-transform: uppercase;
+				background: #dab350;
+				border: none;
+				cursor: pointer;
+				border-radius: 3px;
+				transition: background 0.09s ease-in;
+
+				&:hover {
+					background: lighten(#dab350, 2%);
+					box-shadow: 0px 0px 1px 3px #a38a4986;
+				}
+				&:focus:active {
+					background: darken(#e9c46a, 10%);
+					box-shadow: 0px 0px 1px 3px #a389495b;
+					box-shadow: inset 0px 0px 4px 2px #4949495b;
+				}
+			}
 		}
 	}
 
@@ -49,6 +90,14 @@ body {
 		&-text {
 			display: flex;
 			flex-direction: column;
+
+			&--field {
+				width: 100%;
+				padding: 10px;
+				background: #ffffff1e;
+				border: none;
+				outline: none;
+			}
 		}
 	}
 }
